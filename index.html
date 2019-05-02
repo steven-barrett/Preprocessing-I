@@ -12,8 +12,58 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
+<body>  
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+    </nav>
 
-<body>
-  <h1>My Resume</h1>
+  <section class="header-section">
+    <img src="images/LOQY5589.jpg" alt="Personal headshot">
+  
+    <h1>Steven Barrett - Web Dev</h1>
+    <h5>Web development is my specialty</h5>
+    <hr />
+
+    <p class="header-p">When I have the time I like to work on side projects, hit me up if you need a website.</p>
+    <button onclick="myFunction()">Contact Info</button>
+    <div id="myDIV">
+        <p class="hidden-p">Contact me at: barrett.steven85@gmail.com</p>
+      </div>
+      <script>
+          function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+          </script>
+  </section>
+
+  <section class="body-section">
+    <div class="div-1">
+      <h2>Work History</h2><br />
+      <p class="p-1">I've been programming in C# for over 5 years and have built a .net application using C#. It connected to an embedded SQL databade so I have some experience with that as well.</p>
+    </div>
+
+    <div class="div-2">
+      <h2>Experience</h2><br />
+      <ul>
+        <li>Programmed in C#</li>
+        <hr>
+        <li>Built a .net application using C#</li>
+        <hr>
+        <li>Sprint Challenge Completed</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="footer">
+    <p class="footer-p">Copywrite Awesomeness 2019</p>
+  </div>
 </body>
 </html>
